@@ -17,6 +17,7 @@ export default function Home() {
 
             <div className="topnav">
                 <a className="active">Certified_Rice</a>
+                <a href="./">Home</a>
                 <a href="./contact">Contact</a>
                 <a href="./portfolio">Portfolio/Work</a>
                 <a href="./hire">Hire me!</a>
