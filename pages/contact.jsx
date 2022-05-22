@@ -34,6 +34,11 @@ export default function Contact() {
             <ul>
                 <li>Discord: Certified Rice#8386</li>
 
+                <a href="mailto:certifiedricee@gmail.com">
+                    <button>Email</button>
+                </a>
+
+
                 <a href="https://twitter.com/Certified_Rice">
                     <button>Twitter</button>
                 </a>
