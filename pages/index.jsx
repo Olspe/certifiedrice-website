@@ -27,6 +27,8 @@ export default function Home() {
             <div className="header" id="header">
                 <h1>Certified Rice</h1>
 
+                <h1 className="ricebowl">🍚</h1>
+
                 <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
 
                 <p>Indie game developer and Front-end Web Developer</p>
