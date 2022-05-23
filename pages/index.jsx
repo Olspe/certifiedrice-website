@@ -70,11 +70,11 @@ export default function Home() {
             <div className="bio" id="bio">
                 <h3 className="underline">Bio</h3>
 
-                <h3 className="css-ypobiv">[Undisclosed year] Born in Columbus, Ohio.</h3>
-                <h3 className="css-ypobiv">[2019] Started Programming</h3>
-                <h3 className="css-ypobiv">[2020] Started making games</h3>
-                <h3 className="css-ypobiv">[2021] Joined and started working at TacoByte</h3>
-                <h3 className="css-ypobiv">[2022-present] Indie game developer and Web developer working on numerous projects and freelance</h3>
+                <h3>[Undisclosed year] Born in Columbus, Ohio.</h3>
+                <h3>[2019] Started Programming</h3>
+                <h3>[2020] Started making games</h3>
+                <h3>[2021] Joined and started working at TacoByte</h3>
+                <h3>[2022-present] Indie game developer and Web developer working on numerous projects and freelance</h3>
 
             </div>
 

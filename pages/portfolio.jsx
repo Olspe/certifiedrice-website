@@ -75,6 +75,25 @@ export default function Portfolio() {
             <a href="https://github.com/CertifiedRice">
                 <button>View more projects on my Github!</button>
             </a>
+
+            <hr></hr>
+
+            <div>
+                <h1 className="underline">Experience</h1>
+
+                <ul>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>Lua</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>Typescript</li>
+                    <li>Ruby</li>
+                    <li>C++</li>
+                    <li>Html & CSS</li>
+                </ul>
+            </div>
         </div>
     )
 }
