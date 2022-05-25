@@ -155,6 +155,12 @@ export default function Portfolio() {
                     <tr className="table-secondary">
                       <th>Ruby</th>
                     </tr>
+
+                    <tr className="table-info">
+                      <th>Roblox Studio</th>
+                      <th>Unity</th>
+                      <th>Unreal Engine</th>
+                    </tr>
                   </tbody>
                 </table>
               </div>

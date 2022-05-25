@@ -31,7 +31,7 @@ export default function Home() {
 
                 <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
 
-                <p>Indie game developer and Front-end Web Developer</p>
+                <h3>Indie game developer and Front-end Web Developer</h3>
                 <ul>
                 <li>Programmer</li>
                 <li>Game Developer</li>

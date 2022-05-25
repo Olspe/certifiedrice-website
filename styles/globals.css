@@ -112,7 +112,6 @@ button {
 /*    */
 
 .ricebowl:hover {
-  /*title it by 30 degrees*/
   transform: rotate(80deg);
 }
 
@@ -185,7 +184,6 @@ button {
 }
 
 .the-team {
-  /*make it so that everything is at the center*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
