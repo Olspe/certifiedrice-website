@@ -2,6 +2,7 @@ export default function Custom404() {
     return (
         <div>
             <div className="topnav">
+                <a className="active ricebowl">🍚</a>
                 <a className="active">Certified_Rice</a>
                 <a href="./">Home</a>
                 <a href="./contact">Contact</a>
