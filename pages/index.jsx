@@ -17,6 +17,7 @@ export default function Home() {
             </Head>
 
             <div className="topnav">
+                <a className="active ricebowl">🍚</a>
                 <a className="active">Certified_Rice</a>
                 <a href="./">Home</a>
                 <a href="./contact">Contact</a>

@@ -112,12 +112,12 @@ button {
 /*    */
 
 .ricebowl:hover {
-  transform: rotate(80deg);
-}
-
-.ricebowl {
   transform: rotate(30deg);
 }
+
+/*.ricebowl {*/
+/*  transform: rotate(30deg);*/
+/*}*/
 
 .languages {
   display: flex;
