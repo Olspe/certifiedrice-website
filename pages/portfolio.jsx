@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Portfolio() {
   return (
-    <div class="bg-dark">
+    <div className="bg-dark">
       <Head>
         <title>Certified_Rice</title>
         <link
@@ -26,12 +26,13 @@ export default function Portfolio() {
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></link>
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
       </Head>
 
@@ -46,8 +47,8 @@ export default function Portfolio() {
         </a>
       </div>
 
-      <section class="container">
-        <div class="pt-3">
+      <section className="container">
+        <div className="pt-3">
           <h1>Certified_Rice</h1>
           <img
             src="https://avatars.githubusercontent.com/certifiedrice"
@@ -57,7 +58,7 @@ export default function Portfolio() {
         </div>
 <button
           type="button"
-          class="btn btn-primary p-2"
+          className="btn btn-primary p-2"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
         >
@@ -114,53 +115,53 @@ export default function Portfolio() {
         
 
         <div
-          class="modal fade"
+          className="modal fade"
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header bg-info">
-                <h3 class="modal-title text-dark" id="exampleModalLabel">
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header bg-info">
+                <h3 className="modal-title text-dark" id="exampleModalLabel">
                   My Experience
                 </h3>
                 <button
                   type="button"
-                  class="btn-close"
+                  className="btn-close"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body text-black bg-light">
-                <table class="table">
+              <div className="modal-body text-black bg-light">
+                <table className="table">
                   <tbody>
-                    <tr class="table-success">
+                    <tr className="table-success">
                       <th>C#</th>
                       <th>Javascript</th>
                       <th>Lua</th>
                     </tr>
-                    <tr class="table-primary">
+                    <tr className="table-primary">
                       <th>Python</th>
                       <th>PHP</th>
                       <th>Html & CSS</th>
                     </tr>
-                    <tr class="table-info">
+                    <tr className="table-info">
                       <th>Java</th>
                       <th>C++</th>
                       <th>Typescript</th>
                     </tr>
-                    <tr class="table-secondary">
+                    <tr className="table-secondary">
                       <th>Ruby</th>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div class="modal-footer bg-light">
+              <div className="modal-footer bg-light">
                 <button
                   type="button"
-                  class="btn btn-dark"
+                  className="btn btn-dark"
                   data-bs-dismiss="modal"
                 >
                   Close
