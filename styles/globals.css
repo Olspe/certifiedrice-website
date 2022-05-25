@@ -143,13 +143,9 @@ button {
 }
 
 .box {
-  display: table;
   width: 320px;
   padding: 10px;
   border: 5px white solid;
-  margin: 0;
-  text-align: center;
-  box-sizing: border-box ;
 }
 
 .box2 {

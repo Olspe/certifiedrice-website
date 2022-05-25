@@ -105,6 +105,19 @@ export default function Portfolio() {
               <button>Project Website</button>
             </a>
           </div>
+
+          <div className="box">
+            <h1>certifiedrice-website</h1>
+            <p>my website!</p>
+
+            <a href="https://github.com/certifiedrice/certifiedrice-website">
+              <button>Project Code</button>
+            </a>
+
+            <a href="https://certifiedrice.tacobyte.dev">
+              <button>Project Website</button>
+            </a>
+          </div>
         </div>
 
         <a href="https://github.com/CertifiedRice">
