@@ -52,7 +52,7 @@ export default function Home() {
 
                 <a href="./portfolio">
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    <button>My portfolio and past work -></button>
+                    <button>My portfolio and past work -> </button>
                 </a>
             </div>
 
