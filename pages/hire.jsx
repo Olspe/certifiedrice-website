@@ -51,6 +51,10 @@ export default function Hire() {
                 <li>BTC Wallet</li>
                 <li>Doge Coin Wallet</li>
             </ul>
+
+            <footer>
+                <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
+            </footer>
         </div>
     )
 }

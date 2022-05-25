@@ -51,6 +51,10 @@ export default function Contact() {
                     <button>Github</button>
                 </a>
             </ul>
+
+            <footer>
+                <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
+            </footer>
         </div>
     )
 }

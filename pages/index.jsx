@@ -79,6 +79,9 @@ export default function Home() {
 
             </div>
 
+            <footer>
+                <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
+            </footer>
         </div>
     )
 }

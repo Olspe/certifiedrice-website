@@ -179,6 +179,10 @@ export default function Portfolio() {
 
       
       </section>
+
+      <footer>
+        <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 }
