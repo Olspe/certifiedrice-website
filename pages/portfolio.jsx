@@ -124,7 +124,7 @@ export default function Portfolio() {
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-header bg-info">
-                <h3 className="modal-title text-dark" id="exampleModalLabel">
+                <h3 className="modal-title text-light" id="exampleModalLabel">
                   My Experience
                 </h3>
                 <button
@@ -134,7 +134,7 @@ export default function Portfolio() {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body text-black bg-light">
+              <div className="modal-body text-black bg-dark">
                 <table className="table">
                   <tbody>
                     <tr className="table-success">
@@ -158,10 +158,10 @@ export default function Portfolio() {
                   </tbody>
                 </table>
               </div>
-              <div className="modal-footer bg-light">
+              <div className="modal-footer bg-dark">
                 <button
                   type="button"
-                  className="btn btn-dark"
+                  className="btn btn-secondary"
                   data-bs-dismiss="modal"
                 >
                   Close
