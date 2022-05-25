@@ -1,5 +1,7 @@
 import Head from "next/head";
-import {motion} from "framer-motion";
+import Image from 'next/image'
+
+import lifejs from '../public/lifejs.gif'
 
 export default function Home() {
     return (
@@ -37,6 +39,11 @@ export default function Home() {
                 <li>Game Developer</li>
                 <li>Designer</li>
                 </ul>
+
+                <Image
+                    src={lifejs}
+                    alt="life.js"
+                />
             </div>
 
             <div className="work" id="work">

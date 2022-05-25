@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import {motion, AnimatePresence} from "framer-motion";
+import lifejs from '../public/lifejs.gif'
 
 function MyApp({ Component, pageProps, router }) {
   return (
