@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from 'next/image'
+import {motion, AnimatePresence} from "framer-motion";
 
 import lifejs from '../public/lifejs.gif'
 
@@ -28,6 +29,20 @@ export default function Home() {
                 <a href="https://github.com/CertifiedRice/certifiedrice-website"><i className="fa-brands fa-github"></i>&nbsp; Source</a>
             </div>
 
+            <motion.div initial="hidden" animate="visible" variants={{
+                hidden: {
+                    scale: .20,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .6
+                    }
+                }
+            }}>
+
             <div className="header" id="header">
                 <h1>Certified Rice</h1>
 
@@ -45,6 +60,8 @@ export default function Home() {
                     alt="life.js"
                 />
             </div>
+
+            </motion.div>
 
             <div className="work" id="work">
                 <h3 className="underline">Work</h3>

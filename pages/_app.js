@@ -1,11 +1,10 @@
 import '../styles/globals.css'
 import {motion, AnimatePresence} from "framer-motion";
-import lifejs from '../public/lifejs.gif'
 
 function MyApp({ Component, pageProps, router }) {
   return (
       <AnimatePresence>
-      <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{duration: .7}} variants={{
+      <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{duration: .7, type: 'easeInOut'}} style={{position: 'relative'}} variants={{
           pageInitial: {
               opacity: 0
           },
