@@ -1,4 +1,5 @@
 import Head from "next/head";
+import {motion, AnimatePresence} from "framer-motion";
 
 export default function Portfolio() {
   return (
@@ -65,6 +66,21 @@ export default function Portfolio() {
         >
           My Experience
         </button>
+
+        <motion.div initial="hidden" animate="visible" variants={{
+          hidden: {
+            scale: .20,
+            opacity: 0
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: .25
+            }
+          }
+        }}>
+
         <div className="projects">
           <div className="box">
             <h1>Razer Chroma Roblox Integration</h1>
@@ -120,9 +136,11 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <a href="https://github.com/CertifiedRice">
-          <button>View more projects on my Github!</button>
-        </a>
+          <a href="https://github.com/CertifiedRice">
+            <button>View more projects on my Github!</button>
+          </a>
+
+        </motion.div>
 
         <hr></hr>
 
