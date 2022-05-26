@@ -1,4 +1,5 @@
 import Head from "next/head";
+import {motion, AnimatePresence} from "framer-motion";
 
 export default function Contact() {
     return (
@@ -28,6 +29,20 @@ export default function Contact() {
             <h1>Certified_Rice</h1>
             <img src="https://avatars.githubusercontent.com/certifiedrice" className="profile-picture"></img>
             <h3 className="underline">Contact</h3>
+
+            <motion.div initial="hidden" animate="visible" variants={{
+                hidden: {
+                    scale: .20,
+                    opacity: 0
+                },
+                visible: {
+                    scale: [1, 1.4, 1.2, 1.1, 1.05, 1.02, 1.01, 1],
+                    opacity: 1,
+                    transition: {
+                        delay: .25
+                    }
+                }
+            }}>
             <p>Ways to contact me!</p>
 
             <h3 className="underline">Contact Methods</h3>
@@ -52,6 +67,8 @@ export default function Contact() {
                     <button>Github</button>
                 </a>
             </ul>
+
+            </motion.div>
 
             <footer>
                 <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
