@@ -88,9 +88,7 @@ button:hover {
   font-size: 16px;
   margin: 4px 2px;
   border-radius: 12px;
-
-  /*make the button larger*/
-    transform: scale(1.26);
+  transform: scale(1.26);
 }
 
 /* navigation bar */
