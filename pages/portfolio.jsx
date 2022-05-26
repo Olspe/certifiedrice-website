@@ -85,7 +85,7 @@ export default function Portfolio() {
               <motion.div whileHover={{
                 position: 'relative',
                 zIndex: 1,
-                scale: 1.1,
+                scale: [1, 1.4, 1.1],
                 transition: {
                   duration: .2
                 }
@@ -110,7 +110,7 @@ export default function Portfolio() {
               <motion.div whileHover={{
                 position: 'relative',
                 zIndex: 1,
-                scale: 1.1,
+                scale: [1, 1.4, 1.1],
                 transition: {
                   duration: .2
                 }
@@ -134,7 +134,7 @@ export default function Portfolio() {
               <motion.div whileHover={{
                 position: 'relative',
                 zIndex: 1,
-                scale: 1.1,
+                scale: [1, 1.4, 1.1],
                 transition: {
                   duration: .2
                 }
@@ -158,7 +158,7 @@ export default function Portfolio() {
               <motion.div whileHover={{
                 position: 'relative',
                 zIndex: 1,
-                scale: 1.1,
+                scale: [1, 1.4, 1.1],
                 transition: {
                     duration: .2
                 }
