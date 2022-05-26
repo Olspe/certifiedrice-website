@@ -5,7 +5,7 @@ import lifejs from '../public/lifejs.gif'
 function MyApp({ Component, pageProps, router }) {
   return (
       <AnimatePresence>
-      <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" exit="pageExit" variants={{
+      <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{duration: .7}} variants={{
           pageInitial: {
               opacity: 0
           },
@@ -15,8 +15,7 @@ function MyApp({ Component, pageProps, router }) {
           pageExit: {
               backgroundColor: 'white',
               filter: `invert()`,
-              opacity: 0
-
+              opacity: 0,
           }
       }}>
           <Component {...pageProps} />
