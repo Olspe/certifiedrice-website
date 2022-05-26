@@ -38,7 +38,7 @@ export default function Home() {
                     scale: 1,
                     opacity: 1,
                     transition: {
-                        delay: .6
+                        delay: .25
                     }
                 }
             }}>
