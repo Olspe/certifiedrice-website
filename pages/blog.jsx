@@ -81,6 +81,10 @@ export default function Blog() {
                 <p>No posts right now! Please come back later!</p>
             </div>
             </motion.div>
+
+            <footer>
+                <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
+            </footer>
         </div>
     )
 }
