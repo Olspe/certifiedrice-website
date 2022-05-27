@@ -1,12 +1,14 @@
 import Head from "next/head";
 import {motion, AnimatePresence} from "framer-motion";
 
-export default function Hire() {
+
+export default function Blog() {
     return (
         <div>
             <Head>
                 <title>Certified_Rice</title>
                 <link rel="icon" href="https://avatars.githubusercontent.com/certifiedrice" />
+
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
                       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
                       crossOrigin="anonymous" referrerPolicy="no-referrer"/>
@@ -23,30 +25,18 @@ export default function Hire() {
                 <a href="./portfolio">Portfolio/Work</a>
                 <a href="./hire">Hire me!</a>
                 <a href="./blog">Blog</a>
-                <a href="https://github.com/CertifiedRice/certifiedrice-website"><i className="fa-brands fa-github"></i>&nbsp; Source</a>
+                <a href="https://github.com/CertifiedRice/certifiedrice-website">
+                    <i className="fa-brands fa-github"></i>&nbsp; Source
+                </a>
             </div>
-
-
-            <h1>Certified_Rice</h1>
-            <img src="https://avatars.githubusercontent.com/certifiedrice" className="profile-picture"></img>
-            <h3 className="underline">Hire me!</h3>
-
-            <p>I do commission(sometimes), I can code stuff.</p>
-
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            <p>I'm available for hire!</p>
-
-            <a href="./contact">
-                <button>Contact</button>
-            </a>
 
             <motion.div initial="hidden" animate="visible" variants={{
                 hidden: {
-                    scale: [.20, .40, .60, .80, .20],
-                    opacity: [1, 2, 0]
+                    scale: .20,
+                    opacity: 0
                 },
                 visible: {
-                    scale: [1, 1.4, 1.2, 1.1, 1.05, 1.02, 1.01, 1],
+                    scale: [1, 1.25, 1],
                     opacity: 1,
                     transition: {
                         delay: .25
@@ -54,26 +44,43 @@ export default function Hire() {
                 }
             }}>
 
-            <h3 className="underline">Payment options</h3>
-            <ul>
-                <li>USD</li>
-                <li>BTC</li>
-                <li>Doge Coin</li>
-            </ul>
+            <div className="header">
+                <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                <h1>Certified Rice's Blog</h1>
 
-            <h3 className="underline">Payment Methods</h3>
+                <h3>Indie game developer and Front-end Web Developer</h3>
+                <ul>
+                    <li>Programmer</li>
+                    <li>Game Developer</li>
+                    <li>Designer</li>
+                </ul>
 
-            <ul>
-                <li>Cashapp</li>
-                <li>BTC Wallet</li>
-                <li>Doge Coin Wallet</li>
-            </ul>
+                <hr></hr>
+            </div>
 
             </motion.div>
 
-            <footer>
-                <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
-            </footer>
+            <motion.div initial="hidden" animate="visible" variants={{
+                hidden: {
+                    scale: .20,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .30
+                    }
+                }
+            }}>
+            <div>
+                <h3 className="underline">Blog</h3>
+
+
+                <p>No posts right now! Please come back later!</p>
+            </div>
+            </motion.div>
         </div>
     )
 }

@@ -8,6 +8,7 @@ export default function Custom404() {
                 <a href="./contact">Contact</a>
                 <a href="./portfolio">Portfolio/Work</a>
                 <a href="./hire">Hire me!</a>
+                <a href="./blog">Blog</a>
                 <a href="https://github.com/CertifiedRice/certifiedrice-website"><i className="fa-brands fa-github"></i>&nbsp; Source</a>
             </div>
 
