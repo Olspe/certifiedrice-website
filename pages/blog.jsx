@@ -37,13 +37,6 @@ export default function Blog() {
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <h1>Certified Rice's Blog</h1>
 
-                <h3>Indie game developer and Front-end Web Developer</h3>
-                <ul>
-                    <li>Programmer</li>
-                    <li>Game Developer</li>
-                    <li>Designer</li>
-                </ul>
-
                 <hr></hr>
             </div>
 
