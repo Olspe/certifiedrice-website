@@ -34,7 +34,6 @@ export default function Home() {
             }}>
 
             <div className="header" id="header">
-                <h1>Certified Rice</h1>
 
                 <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
 

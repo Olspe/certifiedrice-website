@@ -63,10 +63,16 @@ export default function Blog() {
                 }
             }}>
             <div>
-                <h3 className="underline">Blog</h3>
+                <h3 className="underline">Blog Posts</h3>
 
+                <div className="box">
+                    <h1>Why you should learn Lua!</h1>
 
-                <p>No posts right now! Please come back later!</p>
+                    <a href="./learnlua">
+                        <button>View Post</button>
+                    </a>
+                </div>
+
             </div>
             </motion.div>
         </div>
