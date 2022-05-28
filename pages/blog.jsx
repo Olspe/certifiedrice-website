@@ -55,18 +55,31 @@ export default function Blog() {
                     }
                 }
             }}>
+                <div className="blogposts">
+
             <div>
                 <h3 className="underline">Blog Posts</h3>
 
                 <div className="box">
                     <h1>Why you should learn Lua!</h1>
 
+                    <p>2:19 PM EDT</p>
                     <a href="../posts/learnlua">
                         <button>View Post</button>
                     </a>
                 </div>
 
+                <div className="box">
+                    <h1>Using MDX with Next.js</h1>
+
+                    <p>5:40 PM EDT</p>
+                    <a href="../posts/nextjs-mdx">
+                        <button>View Post</button>
+                    </a>
+                </div>
             </div>
+                </div>
+
             </motion.div>
         </div>
     )
