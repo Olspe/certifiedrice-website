@@ -68,7 +68,7 @@ export default function Blog() {
                 <div className="box">
                     <h1>Why you should learn Lua!</h1>
 
-                    <a href="./learnlua">
+                    <a href="../posts/learnlua">
                         <button>View Post</button>
                     </a>
                 </div>
