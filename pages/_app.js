@@ -1,5 +1,8 @@
 import '../styles/globals.css'
 import {motion, AnimatePresence} from "framer-motion";
+import Layout from '../comps/Layout'
+import Navbar from '../comps/Navbar'
+
 function MyApp({ Component, pageProps, router }) {
   return (
       <AnimatePresence>
@@ -16,7 +19,9 @@ function MyApp({ Component, pageProps, router }) {
               opacity: 0,
           }
       }}>
+          <Layout>
           <Component {...pageProps} />
+          </Layout>
       </motion.div>
       </AnimatePresence>
   )
