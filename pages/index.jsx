@@ -91,10 +91,6 @@ export default function Home() {
                 <h3>[2022-present] Indie game developer and Web developer working on numerous projects and freelance</h3>
 
             </div>
-
-            <footer>
-                <p>© 2022-Present Certified_Rice. All Rights Reserved.</p>
-            </footer>
         </div>
     )
 }
