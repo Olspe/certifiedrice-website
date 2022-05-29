@@ -7,10 +7,11 @@ function MyApp({ Component, pageProps, router }) {
       <AnimatePresence>
       <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" exit="pageExit" transition={{duration: .7, type: 'easeInOut'}} style={{position: 'relative'}} variants={{
           pageInitial: {
-              opacity: 0
+              opacity: 0,
           },
           pageAnimate: {
-              opacity: 1
+              opacity: [1, 0.21, 1],
+              scale: [1, 1.03, 1]
           },
           pageExit: {
               backgroundColor: 'white',
