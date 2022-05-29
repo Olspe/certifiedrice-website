@@ -35,7 +35,7 @@ export default function Blog() {
             <div className="header">
                 <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <h1>Certified Rice's Blog</h1>
+                <h1 className="underline">Certified Rice's Blog</h1>
 
                 <hr></hr>
             </div>
