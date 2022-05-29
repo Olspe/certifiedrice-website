@@ -63,6 +63,7 @@ export default function Blog() {
                 <div className="box">
                     <h1>Why you should learn Lua!</h1>
 
+                    <p>5/28/22</p>
                     <p>2:19 PM EDT</p>
                     <a href="../posts/learnlua">
                         <button>View Post</button>
@@ -72,6 +73,7 @@ export default function Blog() {
                 <div className="box">
                     <h1>Using MDX with Next.js</h1>
 
+                    <p>5/29/22</p>
                     <p>5:40 PM EDT</p>
                     <a href="../posts/nextjs-mdx">
                         <button>View Post</button>
