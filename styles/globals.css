@@ -228,4 +228,5 @@ ul {
 .social {
     justify-content: space-around;
     padding-top: 2cm;
+    align-items: center;
 }

@@ -1,3 +1,5 @@
+import {motion, AnimatePresence} from "framer-motion";
+
 import Navbar from "./Navbar";
 import Foot from "./Footer";
 

@@ -77,10 +77,13 @@ export default function Home() {
 
             <h3 className="underline">Socials</h3>
             <div className="social">
+                <a href="https://github.com/certifiedrice">
+                    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></img>
+                </a>
+
                 <a href="https://discord.gg/mhCzYewC3P">
                     <img src="https://img.shields.io/badge/%3CCertified Rice's Hotel%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white"></img>
                 </a>
-
 
                 <a href="https://twitter.com/Certified_Rice">
                     <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white"></img>
