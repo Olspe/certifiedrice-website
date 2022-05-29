@@ -3,6 +3,7 @@ import Image from 'next/image'
 import {motion, AnimatePresence} from "framer-motion";
 
 import lifejs from '../public/lifejs.gif'
+import {Img} from "@chakra-ui/react";
 
 export default function Home() {
     return (
@@ -36,6 +37,7 @@ export default function Home() {
             <div className="header" id="header">
 
                 <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
+                <h1 className="underline">Certified Rice</h1>
 
                 <h3>Indie game developer and Front-end Web Developer</h3>
                 <ul>
@@ -51,6 +53,10 @@ export default function Home() {
             </div>
 
             </motion.div>
+
+            <a href="./about">
+                <button>About me!</button>
+            </a>
 
             <div className="work" id="work">
                 <h3 className="underline">Work</h3>
@@ -69,26 +75,36 @@ export default function Home() {
                 </a>
             </div>
 
-            <div className="ilove" id="ilove">
-                <h3 className="underline">I Love</h3>
+            <h3 className="underline">Socials</h3>
+            <div className="social">
+                <a href="https://discord.gg/mhCzYewC3P">
+                    <img src="https://img.shields.io/badge/%3CCertified Rice's Hotel%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white"></img>
+                </a>
 
-                <ul>
-                    <li>Music: Vaporwave/or Chill/Lofi</li>
-                    <li>Video Game: First person shooters, mania, and open world sandboxes</li>
-                    <li>Playing my flute or creating music</li>
-                    <li>Learning new things!</li>
-                </ul>
-            </div>
 
-            <div className="bio" id="bio">
-                <h3 className="underline">Bio</h3>
+                <a href="https://twitter.com/Certified_Rice">
+                    <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white"></img>
+                </a>
 
-                <h3>[Undisclosed year] Born in Columbus, Ohio.</h3>
-                <h3>[2019] Started Programming</h3>
-                <h3>[2020] Started making games</h3>
-                <h3>[2021] Joined and started working at TacoByte</h3>
-                <h3>[2022-present] Indie game developer and Web developer working on numerous projects and freelance</h3>
+                <a href="https://www.youtube.com/channel/UCoJd_OYsv7BEpKD36z__7Uw">
+                    <img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"></img>
+                </a>
 
+                <a href="https://www.reddit.com/user/certified_rice">
+                    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white"></img>
+                </a>
+
+                <a href="https://www.tiktok.com/@certified_rice">
+                    <img src="https://img.shields.io/badge/TikTok-%23000000.svg?style=for-the-badge&logo=TikTok&logoColor=white"></img>
+                </a>
+
+                <a href="https://www.twitch.tv/certified_rice">
+                    <Img src="https://camo.githubusercontent.com/345fb5079dd2ac8710149fd95c02b20217ae34be08d2329a64e5983143e9be8e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5477697463682d2532333931343646462e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d547769746368266c6f676f436f6c6f723d7768697465"></Img>
+                </a>
+
+                <a href="mailto:certifiedricee@gmail.com">
+                    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></img>
+                </a>
             </div>
         </div>
     )
