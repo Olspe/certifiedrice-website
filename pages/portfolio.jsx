@@ -168,6 +168,10 @@ export default function Portfolio() {
 
             </div>
 
+            <a href="./frameworks">
+              <button>Frameworks that I know and use!</button>
+            </a>
+
             <a href="https://github.com/CertifiedRice">
               <button>View more projects on my Github!</button>
             </a>
@@ -216,11 +220,8 @@ export default function Portfolio() {
                       <th>C++</th>
                       <th>Typescript</th>
                     </tr>
-                    <tr className="table-secondary">
-                      <th>Ruby</th>
-                    </tr>
 
-                    <tr className="table-info">
+                    <tr className="table-secondary">
                       <th>Roblox Studio</th>
                       <th>Unity</th>
                       <th>Unreal Engine</th>

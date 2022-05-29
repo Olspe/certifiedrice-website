@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from 'next/image'
 import {motion, AnimatePresence} from "framer-motion";
+import {Img} from "@chakra-ui/react";
 
 import lifejs from '../public/lifejs.gif'
-import {Img} from "@chakra-ui/react";
 
 export default function Home() {
     return (
