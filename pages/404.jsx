@@ -1,4 +1,5 @@
 import Head from "next/head";
+import {motion, AnimatePresence} from "framer-motion";
 
 export default function Custom404() {
     return (
@@ -15,17 +16,47 @@ export default function Custom404() {
                       crossOrigin="anonymous"></link>
             </Head>
 
-            <div className="header">
-                <h1 className="underline">404 Error!</h1>
+            <motion.div inital="hidden" animate="visible" varoamts={{
+                hidden: {
+                    scale: .20,
+                    opacity: 0
+                },
+                visible: {
+                    scale: [1, 1.2, 1.1, 1],
+                    opacity: 1,
+                    transition: {
+                        delay: .25
+                    }
+                }
+            }}>
+                <div className="header">
+                    <motion.div inital="hidden" animate="visible" varoamts={{
+                        hidden: {
+                            scale: .20,
+                            opacity: 0
+                        },
+                        visible: {
+                            scale: [1, 1.2, 1.1, 1.5, 1],
+                            opacity: 1,
+                            transition: {
+                                delay: 4.5
+                            }
+                        }
+                    }}>
+                    <div>
+                    <h1 className="underline">404 Error!</h1>
 
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <h3>Oops! Looks like this page doesn't exist!</h3>
-                <h3>Want to return to home?</h3>
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                    <h3>Oops! Looks like this page doesn't exist!</h3>
+                    <h3>Want to return to home?</h3>
 
-                <a href="./">
-                    <button>Go Back Home!</button>
-                </a>
-            </div>
+                    <a href="./">
+                        <button>Go Back Home!</button>
+                    </a>
+                    </div>
+                    </motion.div>
+                </div>
+            </motion.div>
         </div>
     )
 }
