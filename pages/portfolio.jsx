@@ -55,6 +55,8 @@ export default function Portfolio() {
             My Experience
           </button>
 
+          <div className="projects">
+
           <motion.div initial="hidden" animate="visible" variants={{
             hidden: {
               scale: .20,
@@ -178,6 +180,7 @@ export default function Portfolio() {
 
           </motion.div>
 
+          </div>
           <hr></hr>
 
 
