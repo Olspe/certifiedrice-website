@@ -81,8 +81,8 @@ export default function Home() {
                     <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></img>
                 </a>
 
-                <a href="https://discord.gg/mhCzYewC3P">
-                    <img src="https://img.shields.io/badge/%3CCertified Rice's Hotel%3E-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white"></img>
+                <a href="./discord">
+                    <img src="https://img.shields.io/badge/Discord Server-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white"></img>
                 </a>
 
                 <a href="https://twitter.com/Certified_Rice">
