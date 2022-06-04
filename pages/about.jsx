@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from 'next/image'
 import {motion, AnimatePresence} from "framer-motion";
+import Script from 'next/script' //Olspe: imported this in so I could import fontawesome on line 23-27
 
 
 export default function About() {
@@ -17,7 +18,12 @@ export default function About() {
                     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
                     crossOrigin="anonymous"></link>
           </Head>
-
+          {/*Olspe: Added Script tag to access fontawesome */}
+          <Script 
+              src="https://kit.fontawesome.com/a076d05399.js"
+              integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+              crossOrigin="anonymous"
+          ></Script>
           <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
           <h1 className="underline">Certified Rice</h1>
           <hr></hr>
@@ -84,11 +90,13 @@ export default function About() {
                   <p>Based in Columbus, Ohio, Certified_Rice is making opensource projects with passion!</p>
                   <p>He is great with working in a team and is always looking for new challenges!</p>
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  <p>Is currently contributing to <a href="https://tacobyte.dev">TacoByte's</a> Projects</p>
-
+                  <p>Is currently contributing to <a href="https://tacobyte.dev" className="anchor-text">TacoByte's</a> Projects</p> {/* Olspe:vadded"anchor-text" class so i can target it in css */}
+                    {/*Olspe: Added anchor-text class to target for css styling */}
+                    
                   <a href="./portfolio">
                       {/* eslint-disable-next-line react/no-unescaped-entities */}
-                      <button>My portfolio and past work -> </button>
+                      <button><h6>My portfolio and past work</h6>  <i className="fas fa-angle-right"></i></button>
+                      {/*Olspe: RemovedAdded '->' sign  and added  fontawesome's chevron instead */}
                   </a>
               </div>
           </div>
