@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway); /* Added by Olspe (may have been unnecessary)*/
 html,
 body {
   text-align: center;
@@ -77,8 +78,9 @@ button {
   border-radius: 12px;
 }
 
+/* Modified by Olspe */
 button:hover {
-  background-color: gray;
+  background-color: rgb(19, 75, 196);/*rgb(48, 106, 231);*/
   border: none;
   color: white;
   padding: 20px;
@@ -88,7 +90,7 @@ button:hover {
   font-size: 16px;
   margin: 4px 2px;
   border-radius: 12px;
-  transform: scale(1.26);
+  /* transform: scale(1.26); */
 }
 
 /* navigation bar */
@@ -162,6 +164,11 @@ button:hover {
   border: 5px white solid;
 }
 
+.box:hover {
+  box-shadow: 1px 1px 20px rgb(27, 67, 199);
+  border: 5px solid rgb(27, 67, 199);;
+}
+
 .box2 {
   width: 120px;
   padding: 10px;
@@ -207,6 +214,7 @@ ul {
   margin: 0 auto;
 }
 
+/* Modified by Olspe */
 .projects {
   display: flex;
   flex-direction: row;
@@ -216,6 +224,26 @@ ul {
   color: white;
 }
 
+/* Added by Olspe */
+#menu__toggle {
+  display: none;
+  clear:both;
+  margin: 0;
+  padding: 0;
+}
+
+/* Added by Olspe */
+.menu__btn, .myspan, #menu__toggle {
+  position: fixed;
+  /* top: 20px; */
+  /* left: 20px; */
+  /* right: 20px; */
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
 @media (max-width: 16in)
 {
     .box {
@@ -223,6 +251,94 @@ ul {
       margin-right: 30px;
       margin-bottom: fill;
     }
+
+    /* The following codes were Added and/or Modified by Olspe */
+    .projects {
+      /* display: flex; */
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    #menu__toggle {
+      opacity: 0;
+    }
+    #menu__toggle:checked + .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~  .menu__box {
+      left: 0 !important;
+      z-index: 1; /*This is to make it stand in front of code animation shown in home page (or anything else)*/
+    }
+    .menu__btn {
+      position: fixed;
+      top: 20px;
+      /* left: 20px; */
+      right: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+      transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+    .menu__box {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 300px;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      list-style: none;
+      background-color: #ECEFF1;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+      transition-duration: .25s;
+    }
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      /* font-weight: 600; */
+      text-decoration: none;
+      transition-duration: .25s;
+    }
+    .menu__item:hover {
+      background-color: #CFD8DC;
+    }
+
+    #menu__toggle:checked ~  .menu__box {
+      background-color: #212529;
+      display: flex;
+      flex-direction: column;
+    }
+    
 }
 
 
@@ -234,9 +350,53 @@ ul {
     padding-top: 2cm;
     color: white;
 }
-
+/* Modified by Olspe */
 .social {
-    justify-content: space-around;
+  /* background-color: white; */
+  /* width: 25%; */
+    /* display: flex; */
+    justify-content:space-evenly;
     padding-top: 2cm;
     align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Added by Olspe */
+.social a img:hover {/*:not(:last-child)*/
+  /* box-shadow: 1px 1px 20px rgb(199, 27, 193); */
+  border-bottom: 5px solid rgb(199, 27, 193);
+  /* padding-bottom: 2px; */
+
+}
+
+/* Added by Olspe */
+button h6{ 
+  display: inline;
+}
+
+/* Added by Olspe */
+.anchor-text{
+  color: rgb(217, 253, 10);
+  
+}
+
+/* Added by Olspe */
+.anchor-text:hover{
+  color:rgb(10, 253, 233);
+  font-weight: bold;
+}
+
+/* Added by Olspe */
+/* fontawesome class/icon */
+.fa-angle-right {
+  position: relative;
+  top: 3px;
+  display: inline;
+  /* width: 40px; */
+  /* padding-top: 10px; */
+  margin-left: 4px;
+  /* text-align: end; */
+  align-self: center;
+  font-size: 20px;
 }

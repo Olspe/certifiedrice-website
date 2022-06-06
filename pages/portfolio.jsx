@@ -73,12 +73,12 @@ export default function Portfolio() {
 
             <div className="projects">
               <motion.div whileHover={{
-                position: 'relative',
-                zIndex: 1,
-                scale: [1, 1.4, 1.1],
-                transition: {
-                  duration: .2
-                }
+                // position: 'relative', {/*Olspe: These were disorienting so I commented them out */}
+                // zIndex: 1,
+                // scale: [1, 1.4, 1.1],
+                // transition: {
+                //   duration: .2
+                // }
               }}>
 
               <div className="box">
@@ -98,12 +98,12 @@ export default function Portfolio() {
                 </motion.div>
 
               <motion.div whileHover={{
-                position: 'relative',
-                zIndex: 1,
-                scale: [1, 1.4, 1.1],
-                transition: {
-                  duration: .2
-                }
+                // position: 'relative', {/*Olspe: These were disorienting so I commented them out */}
+                // zIndex: 1,
+                // scale: [1, 1.4, 1.1],
+                // transition: {
+                //   duration: .2
+                // }
               }}>
 
               <div className="box">
@@ -122,12 +122,12 @@ export default function Portfolio() {
                 </motion.div>
 
               <motion.div whileHover={{
-                position: 'relative',
-                zIndex: 1,
-                scale: [1, 1.4, 1.1],
-                transition: {
-                  duration: .2
-                }
+                // position: 'relative', {/*Olspe: These were disorienting so I commented them out */}
+                // zIndex: 1,
+                // scale: [1, 1.4, 1.1],
+                // transition: {
+                //   duration: .2
+                // }
               }}>
 
               <div className="box">
@@ -146,12 +146,12 @@ export default function Portfolio() {
               </motion.div>
 
               <motion.div whileHover={{
-                position: 'relative',
-                zIndex: 1,
-                scale: [1, 1.4, 1.1],
-                transition: {
-                    duration: .2
-                }
+                // position: 'relative',    {/*Olspe: These were disorienting so I commented them out */}
+                // zIndex: 1,
+                // scale: [1, 1.4, 1.1],
+                // transition: {
+                //     duration: .2
+                // }
               }}>
 
               <div className="box">
