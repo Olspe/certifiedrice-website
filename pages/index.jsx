@@ -27,6 +27,20 @@ export default function Home() {
               crossOrigin="anonymous"
           ></Script>
 
+            <motion.div initial="hidden" animate="visible" variants={{
+                hidden: {
+                    scale: .20,
+                    opacity: 0
+                },
+                visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        delay: .25
+                    }
+                }
+            }}>
+
             <div className="header" id="header">
 
                 <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
@@ -44,6 +58,8 @@ export default function Home() {
                     alt="life.js"
                 />
             </div>
+
+            </motion.div>
 
             <a href="./about">
                 <button>About me!</button>

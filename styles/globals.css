@@ -133,6 +133,16 @@ button:hover {
      color: var(--tc-dark);
 }
 
+/*    */
+
+.ricebowl:hover {
+    transform: rotate(30deg);
+}
+
+/*.ricebowl {*/
+/*  transform: rotate(30deg);*/
+/*}*/
+
 .languages {
     display: flex;
     flex-direction: row;
@@ -242,6 +252,8 @@ ul {
     z-index: 1;
 }
 
+@media (max-width: 16in)
+{
     .box {
         margin-left: 90px;
         margin-right: 30px;
@@ -334,6 +346,8 @@ ul {
         display: flex;
         flex-direction: column;
     }
+
+}
 
 
 .blogposts {

@@ -229,14 +229,17 @@ export default function Portfolio() {
                       <th>Unity</th>
                       <th>Unreal Engine</th>
                     </tr>
-
-                    <tr className="table-primary">
-                      <th>Full-Stack Web</th>
-                      <th>Game Development</th>
-                      <th>Mobile Development</th>
-                    </tr>
                     </tbody>
                   </table>
+                </div>
+                <div className="modal-footer bg-dark">
+                  <button
+                      type="button"
+                      className="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
                 </div>
               </div>
             </div>
