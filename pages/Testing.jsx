@@ -29,6 +29,9 @@ export default function Home() {
             ></Script>
 
             <h1 className="underline">This is the Testing page to test out new features!</h1>
+
+
+            <button>Light theme</button>
         </div>
     )
 }

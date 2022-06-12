@@ -30,8 +30,9 @@ export default function Discord() {
                           crossOrigin="anonymous"></link>
                 </Head>
 
-                <h1>Certified Rice</h1>
-                <img src="https://avatars.githubusercontent.com/certifiedrice" alt="profile picture" className="profile-picture"/>
+                <img src="https://avatars.githubusercontent.com/certifiedrice" className="profile-picture"></img>
+                <h1 className="underline">Certified Rice</h1>
+                <hr></hr>
 
                 <h1 className="underline">Discord Server</h1>
 

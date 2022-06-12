@@ -26,11 +26,7 @@ const Navbar = () => {
 
     return (        
         <nav className="hamburger-menu">  {/* Olspe: Added classNames and html elements to make the burger icon */}
-            <input id="menu__toggle" type="checkbox" />
-            <label className="menu__btn" htmlFor="menu__toggle">
-                <span className="myspan"></span>
-            </label>
-            <div className="topnav menu__box">
+
                 <a className="active ricebowl">🍚</a>
                 <a className="active">Certified_Rice</a>
                 <a href="../" className='menu__item'>Home</a>

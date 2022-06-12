@@ -1,10 +1,11 @@
 import Head from "next/head";
 import {motion, AnimatePresence} from "framer-motion";
+import Image from "next/image"
 
 export default function Custom404() {
     return (
         <div>
-            <Head>
+            <Head>d
                 <title>Certified_Rice</title>
                 <link rel="icon" href="https://avatars.githubusercontent.com/certifiedrice" />
 
@@ -45,7 +46,6 @@ export default function Custom404() {
                     }}>
                     <div>
                     <h1 className="underline">404 Error!</h1>
-
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <h3>Oops! Looks like this page doesn't exist!</h3>
                     <h3>Want to return to home?</h3>

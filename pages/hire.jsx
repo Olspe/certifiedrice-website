@@ -17,8 +17,9 @@ export default function Hire() {
                       crossOrigin="anonymous"></link>
             </Head>
 
-            <h1>Certified_Rice</h1>
             <img src="https://avatars.githubusercontent.com/certifiedrice" className="profile-picture"></img>
+            <h1 className="underline">Certified Rice</h1>
+            <hr></hr>
             <h3 className="underline">Hire me!</h3>
 
             <p>I do commission(sometimes), I can code stuff.</p>
