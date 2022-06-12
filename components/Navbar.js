@@ -3,21 +3,19 @@ import Script from 'next/script' //Olspe: imported this in so I could import ion
 import { themeChange } from "./helperFunctions/themeChange";  //Olspe: this is a helper function that deals with changing the background and color changes
 
 const Navbar = () => {
-    const [darkMode, setDarkMode] = useState(true);  //state to hold boolean value. true means darkMode is on
-    let themeIcon = <ion-icon name="moon-outline"></ion-icon>;  //default icon to show 
-    let sunnyIcon = <ion-icon name="sunny-outline"></ion-icon>;  //sunny icon 
-    let moonIcon = <ion-icon name="moon-sharp"></ion-icon>;  //moon icon
-    //mode: match this variable' value to darkMode's value.
-    //This gets passed into themeChange() since state varaibles should only be used in the same file it's made in
+    const [darkMode, setDarkMode] = useState(true);
+    let themeIcon = <ion-icon name="moon-sharp"></ion-icon>;
+    let sunnyIcon = <ion-icon name="sunny-outline"></ion-icon>;
+    let moonIcon = <ion-icon name="moon-sharp"></ion-icon>;
     let mode = darkMode;
 
-    function themeToggle() {  //this gets called when theme-btn gets clicked
-        setDarkMode(!darkMode);  //change darkmode value
-        mode = darkMode;  
+    function themeToggle() {
+        setDarkMode(!darkMode);
+        mode = darkMode;
         
     }
 
-    useEffect(function mount() {  //keeps track of changes to darkMode value and updates page styling each time
+    useEffect(function mount() {
         themeChange(mode);
         
     },[darkMode]);
@@ -30,7 +28,7 @@ const Navbar = () => {
             <label className="menu__btn" htmlFor="menu__toggle">
                 <span className="myspan"></span>
             </label>
-             <div className="nav menu__box">
+            <div className="topnav menu__box">
                 <a className="active ricebowl">🍚</a>
                 <a className="active">Certified_Rice</a>
                 <a href="../" className='menu__item'>Home</a>
