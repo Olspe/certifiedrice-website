@@ -147,7 +147,7 @@ button:hover {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: red;
+    background-color: #333;
     overflow: hidden;
 }
 
@@ -294,7 +294,7 @@ ul {
     z-index: 1;
 }
 
-@media (max-width: 6in)
+@media (max-width: 16in)
 {
     .box {
         margin-left: 90px;
