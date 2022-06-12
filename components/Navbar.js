@@ -1,9 +1,6 @@
 const Navbar = () => {
     return (
         <nav className="hamburger-menu">  {/* Olspe: Added classNames and html elements to make the burger icon */}
-            <input id="menu__toggle" type="checkbox" />
-    <label className="menu__btn" htmlFor="menu__toggle">
-      <span className="myspan"></span>
     </label>
             <div className="nav menu__box">
                 <a className="active ricebowl">🍚</a>
